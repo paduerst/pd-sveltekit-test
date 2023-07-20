@@ -5,6 +5,9 @@ body {
 	background-color: rgb(127, 50, 118);
 	text-align: center;
 	overflow-x: hidden;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
 }
 
 a {

@@ -1,3 +1,3 @@
-<h1>This is the Dragon Builder</h1>
-<p>This is a testing website. Ignore it.</p>
+<h1>Dragon Builder</h1>
+<p>WIP. Once complete, you'll be able to build dragons here.</p>
 <p><a href="/">Return to Home.</a></p>
