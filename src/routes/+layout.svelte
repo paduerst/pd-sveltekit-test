@@ -5,16 +5,13 @@
 <header class="primary-header">
 	<a href="/" class="logo-anchor">
 		<img src="favicon.png" alt="Petal Quest logo" aria-label="Site home" class="logo-img" />
-		<!-- <span class="logo-txt">Petal Quest</span> -->
+		<span class="logo-txt">Petal Quest</span>
 	</a>
 
 	<nav class="primary-navigation">
 		<ul class="nav-list">
 			<li>
-				<a href="/">Home</a>
-			</li>
-			<li>
-				<a href="/prismatic-dragons">The Prismatic Dragons</a>
+				<a href="/prismatic-dragons">Prismatic Dragons</a>
 			</li>
 			<li>
 				<a href="/dragon-builder">Dragon Builder</a>
@@ -30,11 +27,17 @@
 
 <style lang="scss">
 	$logoHeight: 40px;
-	$logoVerticalPadding: 8px;
+	$logoVerticalPadding: 6px;
 	$totalHeaderHeight: calc($logoHeight + 2 * $logoVerticalPadding);
 
 	$navFontSize: 16px;
 	$navFontVerticalPadding: calc(0.5 * ($totalHeaderHeight - $navFontSize));
+
+	$logoHorizontalPadding: 12px;
+	$navButtonsHorizontalPadding: $logoHorizontalPadding;
+	// This is a hardcoded width value, which I dislike.
+	$navTextWidth: calc(131px + 107px + 42px);
+	$numNavElements: 3;
 
 	.primary-header {
 		display: flex;
@@ -45,33 +48,38 @@
 
 	.logo-anchor {
 		line-height: 0;
-		display: inline-block;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: #eee;
 
 		&:hover {
 			background-color: #53902b;
+			color: #fff;
 		}
 	}
 
 	.logo-img {
-		width: $logoHeight;
 		height: $logoHeight;
-		padding: $logoVerticalPadding 4px;
-		padding-left: 12px;
+		padding: $logoVerticalPadding $logoHorizontalPadding;
+		padding-right: calc(0.5 * $logoHorizontalPadding);
 	}
 
 	.logo-txt {
 		font-size: $navFontSize;
-		// box-sizing: content-box;
-		// display: inline-block;
-		height: $navFontSize;
+		white-space: nowrap;
+		padding: $navFontVerticalPadding $logoHorizontalPadding;
+		padding-left: calc(0.5 * $logoHorizontalPadding);
+	}
 
-		padding: $navFontVerticalPadding 12px;
+	.primary-navigation {
+		display: flex;
+		margin-left: auto;
+		margin-right: 0;
 	}
 
 	.nav-list {
 		margin: 0;
-		display: flex;
-		gap: 0;
 		padding: 0;
 		font-size: $navFontSize;
 		list-style-type: none;
@@ -81,8 +89,9 @@
 
 			a {
 				color: #eee;
-				padding: $navFontVerticalPadding 16px;
+				padding: $navFontVerticalPadding $navButtonsHorizontalPadding;
 				text-decoration: none;
+				white-space: nowrap;
 
 				box-sizing: content-box;
 				display: inline-block;
