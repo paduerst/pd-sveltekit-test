@@ -1,4 +1,4 @@
-import{s as G,n as k}from"../chunks/scheduler.e108d1fd.js";import{S as J,i as K,g as s,s as u,h as o,x as n,c as m,k as h,a as i,f as l}from"../chunks/index.5ae4157e.js";function N(E){let a,M="About Petal Quest",q,C,T="This page will contain info about who we are.",w,d,j=`For now, this is just a page with a ton of content so we can test how things look with lots of
+import{s as G,n as k}from"../chunks/scheduler.e108d1fd.js";import{S as J,i as K,g as s,s as u,h as o,y as n,c as m,k as h,a as i,f as l}from"../chunks/index.d314317b.js";function N(E){let a,M="About Petal Quest",q,C,T="This page will contain info about who we are.",w,d,j=`For now, this is just a page with a ton of content so we can test how things look with lots of
 	content.`,b,r,Q=`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, praesentium eos et
 	consequuntur neque similique, est velit saepe tempora nobis architecto commodi cum, natus ea
 	reprehenderit voluptatum mollitia eligendi porro.`,P,p,R=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quam culpa beatae nesciunt aliquam,
