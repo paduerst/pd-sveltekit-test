@@ -85,9 +85,11 @@
 		text-decoration: none;
 		color: $inactiveTextColor;
 
-		&:hover {
-			background-color: $hoverBackgroundColor;
-			color: $hoverTextColor;
+		@media (hover: hover) {
+			&:hover {
+				background-color: $hoverBackgroundColor;
+				color: $hoverTextColor;
+			}
 		}
 	}
 
@@ -148,9 +150,11 @@
 			}
 		}
 
-		&:hover {
-			background-color: $hoverBackgroundColor;
-			color: $hoverTextColor;
+		@media (hover: hover) {
+			&:hover {
+				background-color: $hoverBackgroundColor;
+				color: $hoverTextColor;
+			}
 		}
 	}
 
@@ -173,9 +177,11 @@
 				display: inline-block;
 				height: $navFontSize;
 
-				&:hover {
-					background-color: $hoverBackgroundColor;
-					color: $hoverTextColor;
+				@media (hover: hover) {
+					&:hover {
+						background-color: $hoverBackgroundColor;
+						color: $hoverTextColor;
+					}
 				}
 			}
 		}
