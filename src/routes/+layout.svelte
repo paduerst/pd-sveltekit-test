@@ -11,3 +11,12 @@
 </main>
 
 <Footer />
+
+<style>
+	main {
+		padding: 0 16px;
+		margin: 0 auto;
+		width: auto;
+		max-width: 1200px;
+	}
+</style>
