@@ -6,9 +6,11 @@
 
 <Header />
 
-<main>
-	<slot />
-</main>
+<div class="main-color">
+	<main>
+		<slot />
+	</main>
+</div>
 
 <Footer />
 
@@ -18,5 +20,10 @@
 		margin: 0 auto;
 		width: auto;
 		max-width: 1200px;
+	}
+
+	.main-color {
+		width: 100%;
+		background-color: rgb(127, 50, 118);
 	}
 </style>
